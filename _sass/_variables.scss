@@ -1,0 +1,58 @@
+
+// Colors -----------------------
+
+$deep-blue: hsl(209, 53%, 16%);
+$color2: hsl(199, 100%, 29%);
+$color3: hsl(198, 63%, 38%);
+$color4: hsl(202, 78%, 49%);
+$color5: hsl(202, 91%, 95%);
+$color6: hsl(186, 28%, 93%);
+
+$main-bg-color:           $color5; //hsl(230, 24%, 40%)
+$main-bg-color-shade:     $color2;
+$main-link-color:         $color4;
+$main-link-color-hover:   $deep-blue;
+$main-color-subtle:       $color3;
+$main-color:              $color3;
+$main-color-strong:       $color2; //#20515b
+$main-border-color:       hsl(190, 12%, 84%);
+
+$secondary-bg-color:           $color5;
+$secondary-link-color:         $color4;
+$secondary-link-color-hover:   $deep-blue;
+$secondary-color-subtle:       $color3;
+$secondary-color:              $color3;
+
+// Jumbo
+$jumbo-bg-color:     $deep-blue; //hsl(230, 16%, 20%)
+$jumbo-color-subtle: hsl(189, 44%, 74%); //hsl(190, 24%, 52%)
+$jumbo-color:        $color6; //hsl(190, 36%, 60%)
+$jumbo-color-strong: $color4; //hsl(190, 88%, 80%) #9feaf9
+
+// Sub
+$sub-bg-color:     $deep-blue;
+$sub-color:        $color6;
+$sub-color-strong: $color4;
+
+// Mini
+$mini-bg-color:     hsl(230, 24%, 36%); // hsl(228, 22%, 25%)  hsl(230, 16%, 22%)
+$mini-color:        hsl(230, 24%, 80%);
+$mini-color-link:   hsl(230, 24%, 100%);
+
+// Accent
+$accent-color: hsl(335, 87%, 47%);
+
+
+// Basecoat overrides
+
+$theme-color: $deep-blue;
+
+$body-color:    $main-color;
+$heading-color: $main-color-strong;
+
+$border-color: $main-border-color;
+
+// Incrase xl breakpoit
+// So that containers start breaking before touching the edge
+// Default: $container-max-widths: ( xl: 1260px );
+$grid-breakpoints: map-merge($grid-breakpoints, (xl: 1300px));

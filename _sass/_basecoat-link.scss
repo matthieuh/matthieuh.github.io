@@ -1,0 +1,8 @@
+a {
+  &.external::after, .external::after {
+    content: url(https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2014/12/external-link.png);
+    padding-left: 10px;
+    padding-bottom: 6px;
+    zoom: 0.6;
+  }
+}

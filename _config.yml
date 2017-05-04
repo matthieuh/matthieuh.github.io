@@ -1,0 +1,41 @@
+title: Matthieu H.
+email: matthieu.hostache@gmail.com
+description: 'My personnal website'
+url: 'http://matthieuh.github.io'
+twitter_username: twMatthieuH
+github_username: matthieuh
+future: true
+excerpt_separator: '---'
+gems:
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jemoji
+    - font-awesome-sass
+sass:
+    style: compressed
+collections:
+    docs: {output: true, permalink: '/docs/:path/'}
+defaults:
+    - {scope: {type: docs}, values: {layout: docs}}
+    - {scope: {type: posts}, values: {layout: post, permalink: '/posts/:year/:month/:day/:title'}}
+    - {scope: {path: ""}, values: {image: {path: /images/opengraph.png, width: 1200, height: 630}}}
+exclude:
+    - node_modules
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - Gruntfile.js
+    - package.json
+    - script
+    - spec
+include:
+    - _pages
+google_site_verification: eOAFtDphTbbm4OPKva2d3Z0Z_2bBxWMGdkD0IRQ6VeA
+twitter:
+    username: twMatthieuH
+logo: /images/opengraph.png
+repository: matthieuh/matthieuh.github.io

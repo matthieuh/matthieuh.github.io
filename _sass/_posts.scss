@@ -1,0 +1,85 @@
+
+// Blog ------------------------------
+
+// Index
+
+.blog-index {
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+
+  p {
+    color: $main-color;
+  }
+
+  .who-when {
+    color: $main-color-subtle;
+    font-size: $body-font-size;
+  }
+}
+
+.blog-index-link {
+  color: $main-link-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-link-color-hover;
+  }
+}
+
+.blog-index-time {
+  display: inline;
+}
+
+.author-link {
+  color: $secondary-color-subtle;
+
+  .avatar {
+    position: relative;
+    top: 4px;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+
+// Post
+
+.blog-post {
+  background-color: $secondary-bg-color;
+  color: $secondary-color;
+
+  time {
+    display: inline;
+    margin-bottom: $spacer4;
+    color: $secondary-color-subtle;
+  }
+
+  .who-when {
+    color: $secondary-color-subtle;
+    font-size: $body-font-size;
+  }
+
+  // framed image
+  // to better distinguish white backgrounds
+  // add in MD with ![alt](path){: .screenshot }
+  .screenshot {
+    border: $border;
+    border-radius: $border-radius;
+    padding: $spacer2;
+    background-color: $main-bg-color-shade;
+  }
+
+  hr:first-of-type {
+    display: none;
+  }
+
+  a {
+    color: $secondary-link-color;
+  }
+
+  a code {
+    color: $main-link-color;
+  }
+}
